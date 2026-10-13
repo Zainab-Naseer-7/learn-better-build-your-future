@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduVanta — Learn Better. Build Your Future. | Premium EdTech Platform</title>
+  <meta name="description" content="EduVanta is the premier digital learning platform for engineers, designers, and tech leaders. Master AI systems, distributed engineering, and design tokens from top industry practitioners.">
+  
+  <!-- Design System CSS -->
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+  <!-- Sticky Glassmorphism Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="EduVanta Home">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+          </svg>
+        </div>
+        <span class="brand-text">Edu<span>Vanta</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="instructors.html" class="nav-link">Instructors</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="classroom.html" class="nav-link">Classroom</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="nav-actions">
+        <!-- Global Search Palette Trigger (Ctrl+K) -->
+        <button class="nav-search-btn trigger-search-btn" title="Search courses, instructors, topics" aria-label="Quick Search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span>Search</span>
+          <kbd>Ctrl K</kbd>
+        </button>
+
+        <!-- Theme Toggle Switch -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode" title="Switch Theme"></button>
+
+        <!-- Auth Button -->
+        <button class="btn btn-ghost btn-sm trigger-auth-btn" id="headerLoginBtn">Log in</button>
+        <button class="btn btn-primary btn-sm trigger-auth-btn" id="headerGetStartedBtn">Get Started</button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open Navigation Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path></svg>
+        </div>
+        <span>Edu<span style="color: var(--accent-primary);">Vanta</span></span>
+      </a>
+      <button class="modal-close-btn" id="mobileDrawerClose" aria-label="Close Mobile Menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+      <a href="courses.html" class="mobile-nav-link">Courses Marketplace</a>
+      <a href="instructors.html" class="mobile-nav-link">World-Class Instructors</a>
+      <a href="dashboard.html" class="mobile-nav-link">Student Dashboard</a>
+      <a href="classroom.html" class="mobile-nav-link">Live LMS Classroom</a>
+      <a href="about.html" class="mobile-nav-link">About EduVanta</a>
+      <a href="contact.html" class="mobile-nav-link">Contact & Support</a>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <button class="btn btn-secondary btn-sm trigger-auth-btn" style="width: 100%;">Sign In</button>
+      <button class="btn btn-primary btn-sm trigger-auth-btn" style="width: 100%;">Create Free Account</button>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT AREA -->
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Compelling Content -->
+          <div class="hero-content animate-fade-in">
+            <div class="section-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              Frontier Tech & Engineering Education
+            </div>
+            
+            <h1 class="hero-headline">
+              Learn Better. <br>
+              <span class="gradient-text">Build Your Future.</span>
+            </h1>
+
+            <p class="hero-description">
+              Master high-impact skills in Artificial Intelligence, Distributed Systems, Cloud Architecture, and Product Design with curricula engineered directly by senior Silicon Valley practitioners.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="courses.html" class="btn btn-primary btn-lg" id="heroExploreBtn">
+                <span>Explore Courses</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="classroom.html" class="btn btn-secondary btn-lg" id="heroStartLearningBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>Preview Classroom</span>
+              </a>
+            </div>
+
+            <!-- Trust Indicator -->
+            <div class="hero-trust-indicator">
+              <div class="hero-avatars">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Learner" class="hero-avatar-img">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="Learner" class="hero-avatar-img">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80" alt="Learner" class="hero-avatar-img">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80" alt="Learner" class="hero-avatar-img">
+              </div>
+              <span><strong>Trusted by 120,000+</strong> learners building tomorrow.</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Educational Showcase Visual -->
+          <div class="hero-visual-wrapper animate-fade-in">
+            <!-- Floating Badge 1 (Rating) -->
+            <div class="floating-stat-badge floating-badge-1 animate-float">
+              <div class="stat-badge-icon amber">★</div>
+              <div class="stat-badge-text">
+                <strong>4.98 Rating</strong>
+                <span>Over 42,000+ reviews</span>
+              </div>
+            </div>
+
+            <!-- Main Interactive Card -->
+            <div class="hero-main-card">
+              <div class="hero-preview-topbar">
+                <div class="hero-dots">
+                  <div class="hero-dot red"></div>
+                  <div class="hero-dot yellow"></div>
+                  <div class="hero-dot green"></div>
+                </div>
+                <span>LLM-Attention-Mechanisms.py — EduVanta Interactive LMS</span>
+                <span class="badge badge-primary" style="font-size: 0.7rem;">Live</span>
+              </div>
+
+              <div class="hero-preview-content">
+                <div class="hero-preview-media">
+                  <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&auto=format&fit=crop&q=80" alt="Course Interactive Preview">
+                  <a href="classroom.html" class="hero-play-badge" title="Watch Classroom Demo" aria-label="Watch Demo">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  </a>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                  <div>
+                    <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Generative AI Systems & LLM Architecture</h4>
+                    <span style="font-size: 0.8rem; color: var(--text-muted);">Dr. Elena Vance • DeepMind AI Research</span>
+                  </div>
+                  <span class="badge badge-featured">Bestseller</span>
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid var(--border-subtle); font-size: 0.82rem; color: var(--text-secondary);">
+                  <span>⏱ 38h 45m Masterclass</span>
+                  <span style="font-weight: 700; color: var(--accent-primary);">98.4% Placement Outcome</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2 (Placement Rate) -->
+            <div class="floating-stat-badge floating-badge-2 animate-float" style="animation-delay: -2s;">
+              <div class="stat-badge-icon blue">🚀</div>
+              <div class="stat-badge-text">
+                <strong>98.4% Career Placement</strong>
+                <span>Alumni at OpenAI, Stripe & Google</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. TRUSTED BY INDUSTRY LEADERS STRIP -->
+    <section class="trust-strip">
+      <div class="container trust-strip-inner">
+        <span class="trust-strip-label">Alumni Building At</span>
+        <div class="trust-logos">
+          <div class="trust-logo-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle></svg>
+            <span>Google</span>
+          </div>
+          <div class="trust-logo-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="18" height="18" rx="4"></rect></svg>
+            <span>Stripe</span>
+          </div>
+          <div class="trust-logo-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 22 22 2 22"></polygon></svg>
+            <span>DeepMind</span>
+          </div>
+          <div class="trust-logo-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="9"></circle></svg>
+            <span>Spotify</span>
+          </div>
+          <div class="trust-logo-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="9" height="9"></rect><rect x="13" y="2" width="9" height="9"></rect><rect x="2" y="13" width="9" height="9"></rect><rect x="13" y="13" width="9" height="9"></rect></svg>
+            <span>Microsoft</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. POPULAR SPECIALTIES & CATEGORIES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Fields of Mastery</span>
+          <h2 class="section-title">Engineered for Tomorrow’s Tech Landscape</h2>
+          <p class="section-subtitle">Specialize in highest-demand domains with rigorous, project-backed curricula.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="category-card" onclick="window.location.href='courses.html?category=ai'">
+            <div class="category-icon-box">🧠</div>
+            <div>
+              <h3>Artificial Intelligence & ML</h3>
+              <p>LLM architecture, RLHF, vector embeddings & deep PyTorch foundations.</p>
+            </div>
+          </div>
+
+          <div class="category-card" onclick="window.location.href='courses.html?category=engineering'">
+            <div class="category-icon-box">⚡</div>
+            <div>
+              <h3>Full-Stack & Distributed Systems</h3>
+              <p>Kafka streaming, microservice sagas, caching topology & concurrency.</p>
+            </div>
+          </div>
+
+          <div class="category-card" onclick="window.location.href='courses.html?category=design'">
+            <div class="category-icon-box">🎨</div>
+            <div>
+              <h3>Digital Product Design</h3>
+              <p>Multi-brand design tokens, Figma Variables & WCAG AAA accessible systems.</p>
+            </div>
+          </div>
+
+          <div class="category-card" onclick="window.location.href='courses.html?category=cloud'">
+            <div class="category-icon-box">☁️</div>
+            <div>
+              <h3>Cloud Architecture & DevOps</h3>
+              <p>Kubernetes GitOps with ArgoCD, Istio service mesh & zero-trust posture.</p>
+            </div>
+          </div>
+
+          <div class="category-card" onclick="window.location.href='courses.html?category=data'">
+            <div class="category-icon-box">📊</div>
+            <div>
+              <h3>Data Systems & Lakehouses</h3>
+              <p>Snowflake, dbt Core pipelines, Apache Iceberg & streaming lakehouses.</p>
+            </div>
+          </div>
+
+          <div class="category-card" onclick="window.location.href='courses.html'">
+            <div class="category-icon-box">🚀</div>
+            <div>
+              <h3>Engineering Leadership</h3>
+              <p>Staff+ engineering strategy, architectural RFCs & team execution.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FEATURED CURRICULA -->
+    <section class="section" style="background-color: var(--bg-subtle);">
+      <div class="container">
+        <div style="display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 3rem; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span class="section-tag">Featured Curricula</span>
+            <h2 class="section-title" style="margin-bottom: 0.5rem;">Signature Masterclasses</h2>
+            <p class="section-subtitle">Selected by industry leaders for their depth and immediate production impact.</p>
+          </div>
+          <a href="courses.html" class="btn btn-outline btn-sm">
+            <span>View All 12 Courses</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <!-- Featured Grid populated with first 3 courses -->
+        <div class="grid-3" id="homepageFeaturedCourses">
+          <!-- Populated via EduVantaApp render -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. WHY EDUVANTA -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">The EduVanta Standard</span>
+          <h2 class="section-title">Why the World’s Best Engineers Choose EduVanta</h2>
+          <p class="section-subtitle">We dismantled outdated academic theory to build the learning engine elite engineers deserve.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+            </div>
+            <h3>Practitioner-Led Faculty</h3>
+            <p>Every instructor is an active Staff+ Engineer, Research Scientist, or VP at companies setting global technical standards.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3>Production-Grade Codebases</h3>
+            <p>No toy todo-apps. You build distributed event stores, deploy custom LLM endpoints, and engineer multi-tenant token pipelines.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <h3>Cryptographic Verification</h3>
+            <p>Earn immutable portfolio certificates verifiable by hiring managers, complete with syllabus breakdowns and code links.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            </div>
+            <h3>Flexible Asynchronous Flow</h3>
+            <p>High-density video lessons paired with auto-saving code notes and interactive sandboxes fitting demanding schedules.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3>Exclusive Engineering Network</h3>
+            <p>Join a closed community of 120,000+ ambitious developers, engineering managers, and technical founders globally.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3>30-Day Value Guarantee</h3>
+            <p>We stand completely behind our curriculum quality. If you don’t feel exponential career acceleration, enjoy a 100% instant refund.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. STUDENT SUCCESS STORIES -->
+    <section class="section" style="background-color: var(--bg-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Proven Trajectories</span>
+          <h2 class="section-title">Trusted by Engineers Building the Future</h2>
+          <p class="section-subtitle">Real feedback from professionals who accelerated their careers with EduVanta.</p>
+        </div>
+
+        <div class="grid-3" id="testimonialsContainer">
+          <!-- Testimonials from EDUVANTA_DATA -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PLATFORM NUMBERS & IMPACT -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-4" style="text-align: center;">
+          <div class="card" style="padding: 2.25rem 1.5rem;">
+            <div style="font-size: 2.75rem; font-weight: 800; font-family: var(--font-heading); color: var(--accent-primary); margin-bottom: 0.5rem;">120K+</div>
+            <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;">Active Learners</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">From over 140 countries</div>
+          </div>
+
+          <div class="card" style="padding: 2.25rem 1.5rem;">
+            <div style="font-size: 2.75rem; font-weight: 800; font-family: var(--font-heading); color: #10b981; margin-bottom: 0.5rem;">98.4%</div>
+            <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;">Completion & Placement</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">Reported career advancement</div>
+          </div>
+
+          <div class="card" style="padding: 2.25rem 1.5rem;">
+            <div style="font-size: 2.75rem; font-weight: 800; font-family: var(--font-heading); color: var(--amber-rating); margin-bottom: 0.5rem;">4.98</div>
+            <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;">Average Course Rating</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">From 42,000+ verified reviews</div>
+          </div>
+
+          <div class="card" style="padding: 2.25rem 1.5rem;">
+            <div style="font-size: 2.75rem; font-weight: 800; font-family: var(--font-heading); color: #6366f1; margin-bottom: 0.5rem;">450+</div>
+            <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;">Tier-1 Mentors</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">From global tech pioneers</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FREQUENTLY ASKED QUESTIONS -->
+    <section class="section" style="background-color: var(--bg-subtle);">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <span class="section-tag">Clarity & Confidence</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Everything you need to know about our curriculum standards and enrollment.</p>
+        </div>
+
+        <div id="faqAccordion">
+          <!-- Injected from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. PRE-FOOTER CALL TO ACTION BANNER -->
+    <section class="section">
+      <div class="container">
+        <div style="background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-850) 50%, var(--navy-800) 100%); border-radius: var(--radius-xl); padding: 4.5rem 3rem; text-align: center; color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: var(--shadow-xl); position: relative; overflow: hidden;">
+          <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(37, 99, 235, 0.25); border-radius: 50%; filter: blur(60px); pointer-events: none;"></div>
+          
+          <h2 style="color: #ffffff; font-size: clamp(2rem, 3vw + 1rem, 3rem); margin-bottom: 1rem;">Ready to Accelerate Your Career?</h2>
+          <p style="color: #cbd5e1; font-size: 1.15rem; max-width: 600px; margin: 0 auto 2.5rem auto;">
+            Join over 120,000 engineers and designers mastering frontier technologies with EduVanta today.
+          </p>
+          
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="courses.html" class="btn btn-primary btn-lg">Explore All Courses</a>
+            <button class="btn btn-secondary btn-lg trigger-auth-btn" style="background: rgba(255, 255, 255, 0.1); color: #ffffff; border-color: rgba(255, 255, 255, 0.2);">Create Free Account</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MULTI-COLUMN FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path></svg>
+            </div>
+            <span>Edu<span style="color: var(--accent-primary);">Vanta</span></span>
+          </a>
+          <p>Learn Better. Build Your Future. The premier digital education ecosystem for international engineers and product innovators.</p>
+          <div class="footer-social-links">
+            <a href="https://github.com" target="_blank" rel="noopener" class="footer-social-link" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="footer-social-link" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="footer-social-link" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Platform Links -->
+        <div>
+          <h4 class="footer-col-title">Platform</h4>
+          <div class="footer-links">
+            <a href="courses.html" class="footer-link">All Curricula</a>
+            <a href="courses.html?category=ai" class="footer-link">AI & Machine Learning</a>
+            <a href="courses.html?category=engineering" class="footer-link">Distributed Systems</a>
+            <a href="courses.html?category=design" class="footer-link">Design Systems</a>
+            <a href="dashboard.html" class="footer-link">Student Dashboard</a>
+            <a href="classroom.html" class="footer-link">LMS Classroom</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Faculty & Company -->
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">Our Mission</a>
+            <a href="instructors.html" class="footer-link">Faculty Directory</a>
+            <a href="about.html#values" class="footer-link">Principles</a>
+            <a href="about.html#timeline" class="footer-link">Roadmap</a>
+            <a href="contact.html" class="footer-link">Careers</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Support -->
+        <div>
+          <h4 class="footer-col-title">Resources</h4>
+          <div class="footer-links">
+            <a href="contact.html" class="footer-link">Help & Support</a>
+            <a href="contact.html#faq" class="footer-link">FAQ Guide</a>
+            <a href="courses.html" class="footer-link">Scholarships</a>
+            <a href="about.html" class="footer-link">Enterprise Teams</a>
+            <a href="contact.html" class="footer-link">Direct Inquiries</a>
+          </div>
+        </div>
+
+        <!-- Col 5: Newsletter -->
+        <div class="footer-newsletter">
+          <h4 class="footer-col-title">Engineering Dispatch</h4>
+          <p>Get bi-weekly architectural breakdowns and course updates directly to your inbox.</p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="name@company.com" required aria-label="Email for Newsletter">
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+          <span style="font-size: 0.75rem; color: #64748b;">Zero spam. Unsubscribe at any time.</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 EduVanta Technologies Inc. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="about.html" class="footer-link">Privacy Policy</a>
+          <a href="about.html" class="footer-link">Terms of Service</a>
+          <a href="contact.html" class="footer-link">Security Disclosures</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GLOBAL SEARCH MODAL (Ctrl+K) -->
+  <div class="modal-backdrop" id="searchModal" role="dialog" aria-modal="true" aria-label="Global Search">
+    <div class="modal-container" style="max-width: 600px;">
+      <button class="modal-close-btn" aria-label="Close search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div style="padding: 1.5rem 1.5rem 0.75rem 1.5rem; border-bottom: 1px solid var(--border-subtle);">
+        <div class="input-with-icon">
+          <span class="input-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </span>
+          <input type="text" id="commandSearchInput" class="form-control" placeholder="Search courses, instructors, topics (e.g. AI, Kafka, Design)..." autofocus>
+        </div>
+      </div>
+      <div id="commandSearchResults" style="padding: 1rem 1.5rem 1.5rem 1.5rem; max-height: 380px; overflow-y: auto;">
+        <!-- Quick links or search results -->
+      </div>
+    </div>
+  </div>
+
+  <!-- AUTHENTICATION MODAL (Login / Register) -->
+  <div class="modal-backdrop" id="authModal" role="dialog" aria-modal="true" aria-label="User Authentication">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Close modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      
+      <div style="padding: 2rem;">
+        <!-- Header -->
+        <div style="text-align: center; margin-bottom: 1.75rem;">
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.35rem;">Welcome to EduVanta</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">Access your frontier learning dashboard</p>
+        </div>
+
+        <!-- Mode Toggle Tabs -->
+        <div style="display: flex; background: var(--bg-subtle); padding: 4px; border-radius: var(--radius-md); margin-bottom: 1.5rem;">
+          <button class="auth-tab-btn active" data-auth-mode="login" style="flex: 1; padding: 0.6rem; font-size: 0.9rem; font-weight: 600; border-radius: var(--radius-sm); transition: all 0.2s;">Log In</button>
+          <button class="auth-tab-btn" data-auth-mode="register" style="flex: 1; padding: 0.6rem; font-size: 0.9rem; font-weight: 600; border-radius: var(--radius-sm); transition: all 0.2s;">Create Account</button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="authLoginForm">
+          <div class="form-group">
+            <label class="form-label" for="loginEmail">Email address</label>
+            <input type="email" id="loginEmail" class="form-control" value="alex.morgan@frontier.io" required>
+          </div>
+          <div class="form-group">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <label class="form-label" for="loginPassword">Password</label>
+              <a href="#" style="font-size: 0.8rem; color: var(--accent-primary);" onclick="EduvantaUI.showToast('Demo reset link dispatched to email', 'info'); return false;">Forgot?</a>
+            </div>
+            <input type="password" id="loginPassword" class="form-control" value="••••••••••••" required>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">Log In to EduVanta</button>
+        </form>
+
+        <!-- Register Form (Hidden by default) -->
+        <form id="authRegisterForm" style="display: none;">
+          <div class="form-group">
+            <label class="form-label" for="regName">Full Name</label>
+            <input type="text" id="regName" class="form-control" placeholder="e.g. Alex Morgan" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="regEmail">Work Email</label>
+            <input type="email" id="regEmail" class="form-control" placeholder="alex@company.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="regPassword">Create Password</label>
+            <input type="password" id="regPassword" class="form-control" placeholder="At least 8 characters" required>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">Create Learner Account</button>
+        </form>
+
+        <!-- Social login UI -->
+        <div style="text-align: center; margin: 1.5rem 0 1rem 0; position: relative;">
+          <hr style="border: none; border-top: 1px solid var(--border-subtle);">
+          <span style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--bg-surface); padding: 0 0.75rem; font-size: 0.78rem; color: var(--text-muted);">or continue with</span>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+          <button class="btn btn-secondary btn-sm" onclick="EduvantaUI.showToast('Connected via Google OAuth', 'success'); EduvantaUI.closeModal('authModal');">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle></svg>
+            Google
+          </button>
+          <button class="btn btn-secondary btn-sm" onclick="EduvantaUI.showToast('Connected via GitHub OAuth', 'success'); EduvantaUI.closeModal('authModal');">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            GitHub
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="state.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+  <script>
+    // Homepage Specific Injections
+    document.addEventListener('DOMContentLoaded', () => {
+      // Render first 3 featured courses
+      const featuredGrid = document.getElementById('homepageFeaturedCourses');
+      if (featuredGrid && typeof EDUVANTA_DATA !== 'undefined') {
+        const topCourses = EDUVANTA_DATA.courses.slice(0, 3);
+        featuredGrid.innerHTML = topCourses.map(EduvantaApp.renderCourseCard).join('');
+      }
+
+      // Render Testimonials
+      const testGrid = document.getElementById('testimonialsContainer');
+      if (testGrid && typeof EDUVANTA_DATA !== 'undefined') {
+        testGrid.innerHTML = EDUVANTA_DATA.testimonials.map(t => `
+          <div class="card" style="padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div style="margin-bottom: 1.5rem;">
+              <div style="display: flex; gap: 4px; color: var(--amber-rating); margin-bottom: 1rem;">
+                ★ ★ ★ ★ ★
+              </div>
+              <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); font-style: italic;">"${t.quote}"</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.85rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <img src="${t.avatar}" alt="${t.name}" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover;">
+              <div>
+                <div style="font-weight: 700; font-size: 0.95rem; color: var(--text-primary);">${t.name}</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">${t.role}</div>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // Render FAQs
+      const faqBox = document.getElementById('faqAccordion');
+      if (faqBox && typeof EDUVANTA_DATA !== 'undefined') {
+        faqBox.innerHTML = EDUVANTA_DATA.faqs.map((faq, idx) => `
+          <div class="accordion-item ${idx === 0 ? 'active' : ''}">
+            <button class="accordion-header" type="button">
+              <span>${faq.question}</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-inner">
+                ${faq.answer}
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+    });
+  </script>
+</body>
+</html>

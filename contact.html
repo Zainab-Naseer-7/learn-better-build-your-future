@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Inquiries — EduVanta | Admissions & Technical Support</title>
+  <meta name="description" content="Reach our admissions advisors, enterprise team architects, and technical support. Dedicated response within 2 business hours.">
+  
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path></svg>
+        </div>
+        <span class="brand-text">Edu<span>Vanta</span></span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="instructors.html" class="nav-link">Instructors</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="classroom.html" class="nav-link">Classroom</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-search-btn trigger-search-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span>Search</span>
+          <kbd>Ctrl K</kbd>
+        </button>
+
+        <button class="theme-toggle-btn" aria-label="Toggle Theme"></button>
+        <button class="btn btn-primary btn-sm trigger-auth-btn">Get Started</button>
+
+        <button class="hamburger-btn" id="hamburgerBtn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-logo">Edu<span>Vanta</span></a>
+      <button class="modal-close-btn" id="mobileDrawerClose">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="courses.html" class="mobile-nav-link">Courses</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link active">Contact</a>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTACT CONTENT -->
+  <main class="section-sm">
+    <div class="container">
+      
+      <div class="section-header" style="margin-bottom: 3rem;">
+        <span class="section-tag">Direct Admissions & Advisory</span>
+        <h1 style="font-size: clamp(2.25rem, 3.5vw, 3rem); margin-bottom: 0.75rem;">Get in Touch</h1>
+        <p class="section-subtitle">
+          Have questions regarding team enrollment, syllabus alignment, or enterprise billing? We typically respond within 2 hours.
+        </p>
+      </div>
+
+      <div class="grid-2" style="gap: 3.5rem; align-items: start;">
+        
+        <!-- Left: Validated Contact Form -->
+        <div class="card" style="padding: 2.5rem;">
+          <h2 style="font-size: 1.4rem; margin-bottom: 1.5rem;">Send an Inquiry</h2>
+          
+          <form id="eduvantaContactForm">
+            <div class="form-group">
+              <label class="form-label" for="contactName">Full Name *</label>
+              <input type="text" id="contactName" class="form-control" placeholder="e.g. Alex Morgan" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactEmail">Work Email *</label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="alex@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactSubject">Inquiry Topic</label>
+              <select id="contactSubject" class="form-control" style="cursor: pointer;">
+                <option value="admissions">Curriculum & Individual Enrollment</option>
+                <option value="enterprise">Enterprise Team Licensing (5+ Engineers)</option>
+                <option value="faculty">Faculty & Instructor Partnership</option>
+                <option value="billing">Certificate Verification & Billing</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Your Message *</label>
+              <textarea id="contactMessage" class="form-control" rows="5" placeholder="Please describe your background, team requirements, or questions..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              <span>Submit Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right: Global Offices & Advisory Channels -->
+        <div style="display: flex; flex-direction: column; gap: 1.75rem;">
+          
+          <!-- Office 1: SF -->
+          <div class="card" style="padding: 1.75rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+              <span style="font-size: 1.3rem;">🇺🇸</span>
+              <h3 style="font-size: 1.15rem;">San Francisco Headquarters</h3>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
+              550 Montgomery St, Suite 700<br>
+              San Francisco, CA 94111, United States
+            </p>
+            <div style="margin-top: 0.75rem; font-size: 0.85rem; font-weight: 600; color: var(--accent-primary);">
+              sf@eduvanta.com • +1 (415) 890-3412
+            </div>
+          </div>
+
+          <!-- Office 2: London -->
+          <div class="card" style="padding: 1.75rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+              <span style="font-size: 1.3rem;">🇬🇧</span>
+              <h3 style="font-size: 1.15rem;">London Research Hub</h3>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
+              25 Bank Street, Canary Wharf<br>
+              London E14 5JP, United Kingdom
+            </p>
+            <div style="margin-top: 0.75rem; font-size: 0.85rem; font-weight: 600; color: var(--accent-primary);">
+              london@eduvanta.com • +44 20 7946 0918
+            </div>
+          </div>
+
+          <!-- Direct SLAs -->
+          <div class="card" style="padding: 1.75rem; background: var(--bg-subtle);">
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Academic Advisor Response Guarantee
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+              All inquiries submitted through this portal are reviewed directly by technical admissions staff, never automated bots.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="margin-top: 5rem;">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 EduVanta Technologies Inc. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="courses.html" class="footer-link">Courses</a>
+          <a href="about.html" class="footer-link">About</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="state.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

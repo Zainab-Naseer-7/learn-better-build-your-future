@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty Directory — EduVanta | World-Class Engineering Practitioners</title>
+  <meta name="description" content="Meet EduVanta faculty: Staff AI Research Scientists from DeepMind, Principal Distributed Architects from Stripe, and Design Leaders from Spotify.">
+  
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path></svg>
+        </div>
+        <span class="brand-text">Edu<span>Vanta</span></span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="instructors.html" class="nav-link active">Instructors</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="classroom.html" class="nav-link">Classroom</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-search-btn trigger-search-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span>Search</span>
+          <kbd>Ctrl K</kbd>
+        </button>
+
+        <button class="theme-toggle-btn" aria-label="Toggle Theme"></button>
+        <button class="btn btn-primary btn-sm trigger-auth-btn">Get Started</button>
+
+        <button class="hamburger-btn" id="hamburgerBtn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-logo">Edu<span>Vanta</span></a>
+      <button class="modal-close-btn" id="mobileDrawerClose">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="courses.html" class="mobile-nav-link">Courses</a>
+      <a href="instructors.html" class="mobile-nav-link active">Instructors</a>
+      <a href="dashboard.html" class="mobile-nav-link">Dashboard</a>
+      <a href="classroom.html" class="mobile-nav-link">Classroom</a>
+    </div>
+  </aside>
+
+  <!-- MAIN INSTRUCTORS CONTENT -->
+  <main class="section-sm">
+    <div class="container">
+      
+      <!-- Page Header -->
+      <div class="section-header" style="margin-bottom: 3.5rem;">
+        <span class="section-tag">Elite Practitioners</span>
+        <h1 style="font-size: clamp(2.25rem, 3.5vw, 3rem); margin-bottom: 0.75rem;">World-Class Faculty</h1>
+        <p class="section-subtitle">
+          Learn directly from researchers, principal architects, and engineering directors shaping the frontier at top global technology companies.
+        </p>
+      </div>
+
+      <!-- Instructor Grid -->
+      <div class="grid-2" style="gap: 2.25rem;" id="instructorsDirectoryGrid">
+        
+        <!-- Instructor 1 -->
+        <div class="card" style="padding: 2rem; display: flex; flex-direction: column;">
+          <div style="display: flex; gap: 1.5rem; align-items: flex-start; margin-bottom: 1.25rem; flex-wrap: wrap;">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&auto=format&fit=crop&q=80" alt="Dr. Elena Vance" style="width: 88px; height: 88px; border-radius: 50%; object-fit: cover; border: 2.5px solid var(--accent-primary);">
+            <div style="flex: 1; min-width: 200px;">
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.2rem;">Dr. Elena Vance</h3>
+              <div style="font-size: 0.9rem; font-weight: 600; color: var(--accent-primary); margin-bottom: 0.5rem;">
+                Staff AI Research Scientist • DeepMind
+              </div>
+              <div style="display: flex; align-items: center; gap: 1rem; font-size: 0.82rem; color: var(--text-muted);">
+                <span style="color: var(--amber-rating); font-weight: 700;">★ 4.98 Rating</span>
+                <span>•</span>
+                <span>13,680 Students</span>
+                <span>•</span>
+                <span>3 Curricula</span>
+              </div>
+            </div>
+          </div>
+
+          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+            Leading researcher in neural attention models and transformer alignment benchmarks. Stanford PhD in Computer Science with 14 years deploying cutting-edge deep learning systems.
+          </p>
+
+          <div style="display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+            <span class="badge badge-level">Transformer Architectures</span>
+            <span class="badge badge-level">LLMs & Quantization</span>
+            <span class="badge badge-level">RLHF / DPO</span>
+            <span class="badge badge-level">PyTorch</span>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+            <a href="courses.html?category=ai" class="btn btn-ghost btn-sm" style="color: var(--accent-primary);">View 3 Masterclasses →</a>
+            <button class="btn btn-outline btn-sm" onclick="EduvantaUI.showToast('Elena Vance faculty profile opened', 'info');">Full Profile</button>
+          </div>
+        </div>
+
+        <!-- Instructor 2 -->
+        <div class="card" style="padding: 2rem; display: flex; flex-direction: column;">
+          <div style="display: flex; gap: 1.5rem; align-items: flex-start; margin-bottom: 1.25rem; flex-wrap: wrap;">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&auto=format&fit=crop&q=80" alt="Marcus Chen" style="width: 88px; height: 88px; border-radius: 50%; object-fit: cover; border: 2.5px solid var(--accent-primary);">
+            <div style="flex: 1; min-width: 200px;">
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.2rem;">Marcus Chen</h3>
+              <div style="font-size: 0.9rem; font-weight: 600; color: var(--accent-primary); margin-bottom: 0.5rem;">
+                Principal Distributed Architect • Stripe
+              </div>
+              <div style="display: flex; align-items: center; gap: 1rem; font-size: 0.82rem; color: var(--text-muted);">
+                <span style="color: var(--amber-rating); font-weight: 700;">★ 4.97 Rating</span>
+                <span>•</span>
+                <span>24,200 Students</span>
+                <span>•</span>
+                <span>4 Curricula</span>
+              </div>
+            </div>
+          </div>
+
+          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+            Architect of zero-downtime financial transactional backbones processing tens of billions in payments daily. Former distributed engineering lead at AWS and Uber.
+          </p>
+
+          <div style="display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+            <span class="badge badge-level">Kafka Event Streaming</span>
+            <span class="badge badge-level">Saga Pattern</span>
+            <span class="badge badge-level">High Concurrency</span>
+            <span class="badge badge-level">Rust & Go</span>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+            <a href="courses.html?category=engineering" class="btn btn-ghost btn-sm" style="color: var(--accent-primary);">View 4 Masterclasses →</a>
+            <button class="btn btn-outline btn-sm" onclick="EduvantaUI.showToast('Marcus Chen faculty profile opened', 'info');">Full Profile</button>
+          </div>
+        </div>
+
+        <!-- Instructor 3 -->
+        <div class="card" style="padding: 2rem; display: flex; flex-direction: column;">
+          <div style="display: flex; gap: 1.5rem; align-items: flex-start; margin-bottom: 1.25rem; flex-wrap: wrap;">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&auto=format&fit=crop&q=80" alt="Sarah Lindqvist" style="width: 88px; height: 88px; border-radius: 50%; object-fit: cover; border: 2.5px solid var(--accent-primary);">
+            <div style="flex: 1; min-width: 200px;">
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.2rem;">Sarah Lindqvist</h3>
+              <div style="font-size: 0.9rem; font-weight: 600; color: var(--accent-primary); margin-bottom: 0.5rem;">
+                Design Systems Director • Spotify
+              </div>
+              <div style="display: flex; align-items: center; gap: 1rem; font-size: 0.82rem; color: var(--text-muted);">
+                <span style="color: var(--amber-rating); font-weight: 700;">★ 4.96 Rating</span>
+                <span>•</span>
+                <span>18,400 Students</span>
+                <span>•</span>
+                <span>2 Curricula</span>
+              </div>
+            </div>
+          </div>
+
+          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+            Pioneered Spotify’s global multi-brand token framework across web, iOS, Android, and car audio surfaces. Keynote speaker at Figma Config and design systems summits.
+          </p>
+
+          <div style="display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+            <span class="badge badge-level">Figma Variables</span>
+            <span class="badge badge-level">Design Tokens</span>
+            <span class="badge badge-level">WCAG 2.2 AAA</span>
+            <span class="badge badge-level">Token Pipelines</span>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+            <a href="courses.html?category=design" class="btn btn-ghost btn-sm" style="color: var(--accent-primary);">View 2 Masterclasses →</a>
+            <button class="btn btn-outline btn-sm" onclick="EduvantaUI.showToast('Sarah Lindqvist faculty profile opened', 'info');">Full Profile</button>
+          </div>
+        </div>
+
+        <!-- Instructor 4 -->
+        <div class="card" style="padding: 2rem; display: flex; flex-direction: column;">
+          <div style="display: flex; gap: 1.5rem; align-items: flex-start; margin-bottom: 1.25rem; flex-wrap: wrap;">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&auto=format&fit=crop&q=80" alt="Tariq Mansour" style="width: 88px; height: 88px; border-radius: 50%; object-fit: cover; border: 2.5px solid var(--accent-primary);">
+            <div style="flex: 1; min-width: 200px;">
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.2rem;">Tariq Mansour</h3>
+              <div style="font-size: 0.9rem; font-weight: 600; color: var(--accent-primary); margin-bottom: 0.5rem;">
+                Lead SRE & Platform Architect • Google Cloud
+              </div>
+              <div style="display: flex; align-items: center; gap: 1rem; font-size: 0.82rem; color: var(--text-muted);">
+                <span style="color: var(--amber-rating); font-weight: 700;">★ 4.97 Rating</span>
+                <span>•</span>
+                <span>15,100 Students</span>
+                <span>•</span>
+                <span>3 Curricula</span>
+              </div>
+            </div>
+          </div>
+
+          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+            Author of battle-tested enterprise Kubernetes blueprints used across Fortune 100 cloud footprints. Certified Kubernetes Security Specialist (CKS) and open-source contributor.
+          </p>
+
+          <div style="display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+            <span class="badge badge-level">Kubernetes Platforms</span>
+            <span class="badge badge-level">ArgoCD GitOps</span>
+            <span class="badge badge-level">Istio Service Mesh</span>
+            <span class="badge badge-level">Zero-Trust</span>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+            <a href="courses.html?category=cloud" class="btn btn-ghost btn-sm" style="color: var(--accent-primary);">View 3 Masterclasses →</a>
+            <button class="btn btn-outline btn-sm" onclick="EduvantaUI.showToast('Tariq Mansour faculty profile opened', 'info');">Full Profile</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="margin-top: 5rem;">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 EduVanta Technologies Inc. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="courses.html" class="footer-link">Courses</a>
+          <a href="about.html" class="footer-link">About</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="state.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

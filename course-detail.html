@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Details — EduVanta | Frontier Engineering Curricula</title>
+  <meta name="description" content="Detailed curriculum syllabus, video preview, instructor profile, and enrollment for EduVanta masterclasses.">
+  
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path></svg>
+        </div>
+        <span class="brand-text">Edu<span>Vanta</span></span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="courses.html" class="nav-link active">Courses</a>
+        <a href="instructors.html" class="nav-link">Instructors</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="classroom.html" class="nav-link">Classroom</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-search-btn trigger-search-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span>Search</span>
+          <kbd>Ctrl K</kbd>
+        </button>
+
+        <button class="theme-toggle-btn" aria-label="Toggle Theme"></button>
+        <button class="btn btn-ghost btn-sm trigger-auth-btn">Log in</button>
+        <button class="btn btn-primary btn-sm trigger-auth-btn">Get Started</button>
+
+        <button class="hamburger-btn" id="hamburgerBtn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-logo">Edu<span>Vanta</span></a>
+      <button class="modal-close-btn" id="mobileDrawerClose">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="courses.html" class="mobile-nav-link active">Courses</a>
+      <a href="instructors.html" class="mobile-nav-link">Instructors</a>
+      <a href="dashboard.html" class="mobile-nav-link">Dashboard</a>
+      <a href="classroom.html" class="mobile-nav-link">Classroom</a>
+    </div>
+  </aside>
+
+  <!-- Main Details Page -->
+  <main>
+    <!-- Course Detail Dark Header -->
+    <section class="course-detail-header">
+      <div class="container">
+        <div style="max-width: 820px;">
+          <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+            <span class="badge badge-primary" data-course-field="categoryName">Artificial Intelligence</span>
+            <span class="badge badge-level" data-course-field="level" style="background: rgba(255, 255, 255, 0.1); color: #ffffff;">Advanced</span>
+          </div>
+
+          <h1 data-course-field="title">Generative AI Systems & Large Language Model Architecture</h1>
+          <p class="lead" data-course-field="description">
+            Master transformer architecture, attention mechanisms, fine-tuning with LoRA/QLoRA, RLHF pipelines, and production vector indexing.
+          </p>
+
+          <div class="course-detail-meta">
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--amber-rating); font-weight: 700;">★ <span data-course-field="rating">4.98</span></span>
+              <span>(<span data-course-field="ratingCount">1,420</span> ratings)</span>
+            </div>
+            <span>•</span>
+            <div><span data-course-field="studentsCount">9,480</span> learners enrolled</div>
+            <span>•</span>
+            <div>⏱ <span data-course-field="duration">38h 45m</span> on-demand</div>
+            <span>•</span>
+            <div>📚 <span data-course-field="lessonsCount">42 lessons</span></div>
+          </div>
+
+          <!-- Instructor mini credit in header -->
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-top: 1.5rem;">
+            <img src="" alt="Instructor" class="instructor-avatar" data-course-field="instructorAvatar" style="width: 40px; height: 40px;">
+            <div>
+              <div style="color: #ffffff; font-weight: 600; font-size: 0.95rem;">Created by <span data-course-field="instructorName">Dr. Elena Vance</span></div>
+              <div style="font-size: 0.8rem; color: #94a3b8;"><span data-course-field="instructorTitle">Staff AI Research Scientist</span> at <span data-course-field="instructorCompany">DeepMind</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content & Sticky Sidebar Grid -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="course-detail-layout">
+          
+          <!-- Left Main Body -->
+          <div>
+            <!-- Video Preview Mock Player -->
+            <div style="border-radius: var(--radius-xl); overflow: hidden; margin-bottom: 3rem; box-shadow: var(--shadow-md); border: 1px solid var(--border-medium); background: #000;">
+              <div style="position: relative; padding-top: 56.25%;">
+                <img src="" alt="Course Preview" data-course-field="thumbnail" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+                <div style="position: absolute; inset: 0; background: rgba(5, 11, 20, 0.4); display: flex; flex-direction: column; justify-content: center; align-items: center; color: #ffffff;">
+                  <a href="classroom.html" class="hero-play-badge" style="width: 68px; height: 68px; margin-bottom: 1rem;" title="Watch preview in classroom">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  </a>
+                  <div style="font-weight: 700; font-size: 1.1rem; text-shadow: 0 2px 8px rgba(0,0,0,0.8);">Watch Free Course Preview (Lesson 1)</div>
+                  <div style="font-size: 0.85rem; color: #cbd5e1;">24 minutes • No credit card required</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- "What You'll Learn" Box -->
+            <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 2.25rem; margin-bottom: 3rem;">
+              <h3 style="font-size: 1.4rem; margin-bottom: 1.5rem;">What You Will Master</h3>
+              <ul id="courseLearnList" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+                <!-- Populated dynamically via app.js -->
+              </ul>
+            </div>
+
+            <!-- Course Curriculum Accordion -->
+            <div style="margin-bottom: 3rem;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.25rem;">
+                <div>
+                  <h3 style="font-size: 1.4rem; margin-bottom: 0.25rem;">Course Syllabus & Modules</h3>
+                  <p style="font-size: 0.9rem; color: var(--text-muted);">Expand modules to preview detailed lecture breakdowns.</p>
+                </div>
+              </div>
+
+              <div id="courseCurriculumAccordion">
+                <!-- Accordion modules rendered dynamically via app.js -->
+              </div>
+            </div>
+
+            <!-- Requirements / Prerequisites -->
+            <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 2rem; margin-bottom: 3rem;">
+              <h3 style="font-size: 1.3rem; margin-bottom: 1rem;">Prerequisites</h3>
+              <ul style="display: flex; flex-direction: column; gap: 0.65rem; color: var(--text-secondary); font-size: 0.95rem;">
+                <li style="display: flex; gap: 0.5rem; align-items: center;">
+                  <span style="color: var(--accent-primary);">✓</span>
+                  Proficiency in Python or equivalent modern object-oriented language.
+                </li>
+                <li style="display: flex; gap: 0.5rem; align-items: center;">
+                  <span style="color: var(--accent-primary);">✓</span>
+                  Fundamental understanding of linear algebra and matrix operations.
+                </li>
+                <li style="display: flex; gap: 0.5rem; align-items: center;">
+                  <span style="color: var(--accent-primary);">✓</span>
+                  Basic familiarity with Git, terminal workflows, and container runtimes.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Instructor Spotlight Profile -->
+            <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 2.25rem; margin-bottom: 3rem;">
+              <h3 style="font-size: 1.3rem; margin-bottom: 1.5rem;">Your Instructor</h3>
+              <div style="display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap;">
+                <img src="" alt="Instructor Profile" class="instructor-avatar" data-course-field="instructorAvatar" style="width: 84px; height: 84px; border-width: 2px;">
+                <div style="flex: 1; min-width: 260px;">
+                  <h4 style="font-size: 1.2rem; margin-bottom: 0.25rem;" data-course-field="instructorName">Dr. Elena Vance</h4>
+                  <div style="font-size: 0.88rem; color: var(--accent-primary); font-weight: 600; margin-bottom: 0.75rem;">
+                    <span data-course-field="instructorTitle">Staff AI Research Scientist</span> • <span data-course-field="instructorCompany">DeepMind</span>
+                  </div>
+                  <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6;">
+                    Leading contributor to transformer reasoning and alignment benchmarks. Stanford PhD in Computer Science with over a decade deploying machine learning systems at global scale.
+                  </p>
+                  <div style="margin-top: 1rem;">
+                    <a href="instructors.html" class="btn btn-outline btn-sm">View Full Faculty Bio</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Sticky Enrollment Card -->
+          <aside>
+            <div class="course-sticky-card">
+              <div style="display: flex; align-items: baseline; gap: 0.6rem; margin-bottom: 1rem;">
+                <span class="course-price" style="font-size: 2.2rem;" data-course-field="price">$189</span>
+                <span class="course-price-original" style="font-size: 1.1rem;" data-course-field="originalPrice">$279</span>
+                <span class="badge badge-featured" style="margin-left: auto;">32% OFF</span>
+              </div>
+
+              <p style="font-size: 0.85rem; color: #f43f5e; font-weight: 600; margin-bottom: 1.5rem;">
+                ⚡ Limited enrollment window closes this Sunday
+              </p>
+
+              <!-- Main CTA -->
+              <button id="courseDetailEnrollBtn" class="btn btn-primary btn-lg" style="width: 100%; margin-bottom: 0.75rem;">
+                Enroll in Curriculum
+              </button>
+
+              <a href="classroom.html" class="btn btn-secondary" style="width: 100%; margin-bottom: 1.5rem;">
+                Watch Lesson 1 Free
+              </a>
+
+              <div style="font-size: 0.82rem; text-align: center; color: var(--text-muted); margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <span>30-Day Money-Back Guarantee</span>
+              </div>
+
+              <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.25rem;">
+                <h4 style="font-size: 0.95rem; margin-bottom: 0.85rem;">This Course Includes:</h4>
+                <ul style="display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.88rem; color: var(--text-secondary);">
+                  <li style="display: flex; gap: 0.5rem; align-items: center;">
+                    <span style="color: var(--accent-primary);">⏱</span>
+                    <span>38+ hours of on-demand HD video</span>
+                  </li>
+                  <li style="display: flex; gap: 0.5rem; align-items: center;">
+                    <span style="color: var(--accent-primary);">💻</span>
+                    <span>Full GitHub codebase & sandbox access</span>
+                  </li>
+                  <li style="display: flex; gap: 0.5rem; align-items: center;">
+                    <span style="color: var(--accent-primary);">📜</span>
+                    <span>Verifiable cryptographic certificate</span>
+                  </li>
+                  <li style="display: flex; gap: 0.5rem; align-items: center;">
+                    <span style="color: var(--accent-primary);">♾️</span>
+                    <span>Lifetime access & free future updates</span>
+                  </li>
+                  <li style="display: flex; gap: 0.5rem; align-items: center;">
+                    <span style="color: var(--accent-primary);">💬</span>
+                    <span>Private alumni & mentor Discord</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="margin-top: 4rem;">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 EduVanta Technologies Inc. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="courses.html" class="footer-link">Back to Catalog</a>
+          <a href="dashboard.html" class="footer-link">Dashboard</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div class="modal-backdrop" id="searchModal" role="dialog" aria-modal="true">
+    <div class="modal-container" style="max-width: 600px;">
+      <button class="modal-close-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+      <div style="padding: 1.5rem 1.5rem 0.75rem 1.5rem; border-bottom: 1px solid var(--border-subtle);">
+        <div class="input-with-icon">
+          <span class="input-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span>
+          <input type="text" id="commandSearchInput" class="form-control" placeholder="Search courses, instructors, topics...">
+        </div>
+      </div>
+      <div id="commandSearchResults" style="padding: 1rem 1.5rem 1.5rem 1.5rem; max-height: 380px; overflow-y: auto;"></div>
+    </div>
+  </div>
+
+  <!-- Auth Modal -->
+  <div class="modal-backdrop" id="authModal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button class="modal-close-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+      <div style="padding: 2rem;">
+        <h3 style="text-align: center; margin-bottom: 1.5rem;">Join EduVanta</h3>
+        <form id="authLoginForm">
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" value="alex.morgan@frontier.io" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" value="password123" required>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="state.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About EduVanta — Learn Better. Build Your Future.</title>
+  <meta name="description" content="EduVanta's mission is to engineer the world's most rigorous, practitioner-led digital education ecosystem for engineers and innovators.">
+  
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path></svg>
+        </div>
+        <span class="brand-text">Edu<span>Vanta</span></span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="instructors.html" class="nav-link">Instructors</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="classroom.html" class="nav-link">Classroom</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-search-btn trigger-search-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span>Search</span>
+          <kbd>Ctrl K</kbd>
+        </button>
+
+        <button class="theme-toggle-btn" aria-label="Toggle Theme"></button>
+        <button class="btn btn-primary btn-sm trigger-auth-btn">Get Started</button>
+
+        <button class="hamburger-btn" id="hamburgerBtn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-logo">Edu<span>Vanta</span></a>
+      <button class="modal-close-btn" id="mobileDrawerClose">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="courses.html" class="mobile-nav-link">Courses</a>
+      <a href="about.html" class="mobile-nav-link active">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </aside>
+
+  <!-- MAIN ABOUT CONTENT -->
+  <main>
+    
+    <!-- Hero Banner -->
+    <section class="section" style="background: radial-gradient(circle at 50% 20%, rgba(37, 99, 235, 0.08) 0%, transparent 60%);">
+      <div class="container container-narrow" style="text-align: center;">
+        <span class="section-tag">Our Founding Purpose</span>
+        <h1 style="font-size: clamp(2.5rem, 4vw + 0.5rem, 3.8rem); margin-bottom: 1.5rem; letter-spacing: -0.03em;">
+          Engineering the Future of High-Impact Technical Mastery
+        </h1>
+        <p class="lead" style="margin-bottom: 2.5rem;">
+          EduVanta was founded on a simple realization: the rate of innovation in Artificial Intelligence, distributed computing, and cloud systems has outpaced traditional university curricula. We exist to provide the world's most direct, practitioner-taught learning path.
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission & Vision Dual Card -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="grid-2">
+          <div class="card" style="padding: 2.5rem; border-top: 4px solid var(--accent-primary);">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">🎯</div>
+            <h2 style="font-size: 1.6rem; margin-bottom: 0.75rem;">Our Mission</h2>
+            <p style="color: var(--text-secondary); line-height: 1.7;">
+              To empower 1,000,000 engineers and product innovators worldwide with the technical mental models, architectural discipline, and verifiable skills required to build transformative technologies.
+            </p>
+          </div>
+
+          <div class="card" style="padding: 2.5rem; border-top: 4px solid #10b981;">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">🌐</div>
+            <h2 style="font-size: 1.6rem; margin-bottom: 0.75rem;">Our Vision</h2>
+            <p style="color: var(--text-secondary); line-height: 1.7;">
+              A borderless meritocracy where any dedicated learner, regardless of geographical location, can learn directly from top global practitioners and validate their mastery through cryptographic portfolio credentials.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Values / Philosophy -->
+    <section class="section" id="values" style="background: var(--bg-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Operating Principles</span>
+          <h2 class="section-title">The EduVanta Learning Philosophy</h2>
+          <p class="section-subtitle">Four strict tenets guiding every single curriculum we publish.</p>
+        </div>
+
+        <div class="grid-4">
+          <div class="feature-card">
+            <div style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--accent-primary); font-weight: 800;">01</div>
+            <h3>Zero Toy Applications</h3>
+            <p>Every assignment reproduces real enterprise architectural dilemmas—handling partition failures, cache stampedes, or multi-billion parameter inference.</p>
+          </div>
+
+          <div class="feature-card">
+            <div style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--accent-primary); font-weight: 800;">02</div>
+            <h3>Active Practitioners Only</h3>
+            <p>We do not hire professional lecturers. Our faculty are Staff+ Engineers, AI Researchers, and Directors actively deploying production code today.</p>
+          </div>
+
+          <div class="feature-card">
+            <div style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--accent-primary); font-weight: 800;">03</div>
+            <h3>Verifiable Provenance</h3>
+            <p>Certificates are backed by cryptographic IDs and complete code audits, providing hiring committees with instant, undeniable proof of ability.</p>
+          </div>
+
+          <div class="feature-card">
+            <div style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--accent-primary); font-weight: 800;">04</div>
+            <h3>Speed & Focus</h3>
+            <p>High-density, modular video lessons paired with auto-saving notes and keyboard shortcuts—optimized for busy senior working professionals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline & Milestones -->
+    <section class="section" id="timeline">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <span class="section-tag">Our Journey</span>
+          <h2 class="section-title">Milestones in Global Tech Education</h2>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 2rem; border-left: 2px solid var(--border-medium); padding-left: 2rem; margin-left: 1.5rem;">
+          <div>
+            <span class="badge badge-primary" style="margin-bottom: 0.5rem;">2024</span>
+            <h3 style="font-size: 1.25rem;">Founded in San Francisco</h3>
+            <p style="color: var(--text-secondary); margin-top: 0.25rem;">Launched with 3 flagship engineering masterclasses and 1,200 charter beta fellows from top technology companies.</p>
+          </div>
+
+          <div>
+            <span class="badge badge-primary" style="margin-bottom: 0.5rem;">2025</span>
+            <h3 style="font-size: 1.25rem;">Global Expansion & Enterprise Adoption</h3>
+            <p style="color: var(--text-secondary); margin-top: 0.25rem;">Crossed 50,000 active learners across 110 countries. Integrated cryptographic certificates verified by Fortune 500 engineering recruiters.</p>
+          </div>
+
+          <div>
+            <span class="badge badge-featured" style="margin-bottom: 0.5rem;">2026</span>
+            <h3 style="font-size: 1.25rem;">Frontier AI & Platform Engineering Ecosystem</h3>
+            <p style="color: var(--text-secondary); margin-top: 0.25rem;">120,000+ engineers, 450+ faculty mentors, and deep partnerships with leading AI labs and cloud infrastructure providers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pre-Footer CTA -->
+    <section class="section" style="background: var(--navy-950); color: #ffffff; text-align: center;">
+      <div class="container container-narrow">
+        <h2 style="color: #ffffff; margin-bottom: 1rem;">Build Your Future With EduVanta</h2>
+        <p style="color: #cbd5e1; margin-bottom: 2rem;">Explore the courses that are transforming technical careers around the world.</p>
+        <a href="courses.html" class="btn btn-primary btn-lg">Browse Masterclasses</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 EduVanta Technologies Inc. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="courses.html" class="footer-link">Courses</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="state.js"></script>
+  <script src="ui.js"></script>
+</body>
+</html>
